@@ -1,0 +1,56 @@
+{
+    "MenuHeader": {
+        "Brand": {
+            "Url": "/",
+            "Alt": "Logo",
+            "IconName": "Code"
+        },
+        "Nav": [
+            {
+                "Id": 1,
+                "Name": "Home",
+                "Url": "/"
+            },
+            {
+                "Id": 2,
+                "Name": "Projects",
+                "Url": "/projects"
+            },
+            {
+                "Id": 3,
+                "Name": "About",
+                "Url": "/about"
+            }
+        ],
+        "Social": [
+            {
+                "Id": 1,
+                "IconName": "Linkedin",
+                "Url": "https://www.linkedin.com/in/ngkhang0220/",
+                "Color": "#0a66c2"
+            },
+            {
+                "Id": 2,
+                "IconName": "Github",
+                "Url": "https://github.com/ngkhang",
+                "Color": "#010409"
+            }
+        ]
+    },
+    "HomePage": {
+        "Title": "Mini Projects",
+        "Content": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur fugit culpa magnam nesciunt aperiam optio a veritatis vitae tempora vero nulla, nobis corrupti molestias ex nemo ea porro maxime?"
+        ]
+    },
+    "AboutPage": {
+        "Title": "About Page",
+        "Content": [
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur fugit culpa magnam nesciunt aperiam optio a veritatis vitae tempora vero nulla, nobis corrupti molestias ex nemo ea porro maxime?",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntnesciunt aperiam optio is vitae temp nulla, nobis corrupti molestias ex nemo ea porro maxime?",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur fugit culpa magnaitatis vitae tempora vero nulla, nobis corrupti molestias ex nemo ea porro maxime?",
+            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur fugit culpa magnam nesciunt aperiam optio a vo maxime?"
+        ]
+    },
+    "Footer": "NgKhang. All rights reserved."
+}
