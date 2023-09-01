@@ -10,7 +10,7 @@ const IconsHelper: Prop = {
 	Linkedin: (className?: string) => (
 		<GrLinkedinOption className={className} />
 	),
-	External: (className?: string) => <FiExternalLink className={className} />,
+	Preview: (className?: string) => <FiExternalLink className={className} />,
 	Sun: (className?: string) => <FiSun className={className} />,
 	Moon: (className?: string) => <FiMoon className={className} />,
 	Code: (className?: string) => <BiCodeAlt className={className} />,

@@ -2,16 +2,17 @@ interface eProject {
 	Id: string;
 	Title: string;
 	isDone: boolean;
-	Description: string;
+	Description: string[];
 	Keywords: string[];
 	Feature: string[];
 	Techs: string[];
 	Image: string;
 	Alt: string;
-	Url: {
-		Preview: string;
-		Github: string;
-	};
+	Link: {
+		Id: number,
+		Name: string,
+		Url: string
+	}[];
 }
 
 export default eProject;

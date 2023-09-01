@@ -27,30 +27,29 @@
                 "Id": 1,
                 "IconName": "Linkedin",
                 "Url": "https://www.linkedin.com/in/ngkhang0220/",
-                "Color": "#0a66c2"
+                "Color": "0a66c2"
             },
             {
                 "Id": 2,
                 "IconName": "Github",
                 "Url": "https://github.com/ngkhang",
-                "Color": "#010409"
+                "Color": "010409"
             }
         ]
     },
     "HomePage": {
         "Title": "Mini Projects",
         "Content": [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur fugit culpa magnam nesciunt aperiam optio a veritatis vitae tempora vero nulla, nobis corrupti molestias ex nemo ea porro maxime?"
+            "A collection of mini projects that demonstrate the use of HTML, CSS, JS, ReactJS, and TypeScript"
         ]
     },
     "AboutPage": {
         "Title": "About Page",
         "Content": [
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur fugit culpa magnam nesciunt aperiam optio a veritatis vitae tempora vero nulla, nobis corrupti molestias ex nemo ea porro maxime?",
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntnesciunt aperiam optio is vitae temp nulla, nobis corrupti molestias ex nemo ea porro maxime?",
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur fugit culpa magnaitatis vitae tempora vero nulla, nobis corrupti molestias ex nemo ea porro maxime?",
-            "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat consequuntur fugit culpa magnam nesciunt aperiam optio a vo maxime?"
+            "This project is a collection of mini projects that demonstrate the use of HTML, CSS, JS, ReactJS, and TypeScript.",
+            "I am learning about web development by making mini-projects. \"Mini Project\", where I watch again my learning process as well as can be used as a reference for anyone interested in learning about HTML, CSS, JS, ReactJS, and TypeScript.",
+            "Thanks for visiting, I make \"Mini Projects\" with all my heart, and I hope you enjoy it. ❤️"
         ]
     },
-    "Footer": "NgKhang. All rights reserved."
+    "Footer": " NgKhang. All rights reserved."
 }

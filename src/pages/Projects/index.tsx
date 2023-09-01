@@ -4,9 +4,13 @@ import { DataListProject } from "~/utils";
 function Projects() {
 	return (
 		<div className="flex justify-center flex-grow">
-			<div className="w-3/4 py-4 flex flex-wrap">
+			<div className="py-4 w-full md:w-3/4 flex flex-wrap">
 				{DataListProject.map((item) => {
-					return <Card key={item.Id} data={item} width="md:w-1/3" />;
+					return (
+						<div className="w-full md:w-1/2 lg:w-1/4 px-5 md:px-2 mb-5 md:mb-4">
+							<Card key={item.Id} data={item}/>
+						</div>
+					);
 				})}
 			</div>
 		</div>

@@ -5,26 +5,28 @@ const { HomePage } = DataPage;
 
 function Home() {
 	return (
-		<div className={`flex justify-center flex-grow`}>
-			<div className="w-3/4 flex flex-col">
+		<div className="flex justify-center flex-grow">
+			<div className="w-full md:w-3/4 flex flex-col">
 				<div>
 					<h1>{HomePage.Title}</h1>
-					<p className="mb-3 tracking-wide leading-6">
+					<p className="mb-6 tracking-wider text-sm md:text-lg md:text-center first-letter:text-2xl first-letter:text-pink-500 first-letter:font-semibold px-5 md:px-0 leading-6">
 						{HomePage.Content}
 					</p>
 				</div>
-				<div className="flex flex-col md:flex-row flex-wrap mb-3">
-					{DataListProject.slice(0, 8).map((item) => {
+				<div className="flex flex-col md:flex-row flex-wrap mb-5 px-6 md:px-0">
+					{DataListProject.slice(0, 4).map((item) => {
 						return (
-							<Card key={item.Id} data={item} width="md:w-1/4" />
+							<div key={item.Id} className="w-full md:w-1/2 lg:w-1/4 md:px-2 mb-4 md:mb-4">
+								<Card key={item.Id} data={item}/>
+							</div>
 						);
 					})}
 				</div>
-				{DataListProject.length >= 8 && (
+				{DataListProject.length >= 4 && (
 					<>
-						<div className="text-center my-2">
+						<div className="text-center mb-4">
 							<Link
-								className="inline-block px-10 py-1 rounded-md bg-blue-500 text-slate-100"
+								className="inline-block px-16 py-2 md:py-3 md:px-20 text-sm md:text-base rounded-lg bg-blue-500 text-slate-100"
 								to={"/projects"}
 							>
 								More projects

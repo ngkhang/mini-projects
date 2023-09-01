@@ -1,29 +1,44 @@
 [
     {
-        "Id": "weatherapp",
-        "isDone": false,
-        "Title": "Weather App",
-        "Description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima dolores voluptates asperiores non a. Maxime labore ea sunt corrupti praesentium et voluptatum quas velit excepturi libero qui, dignissimos at aut!",
+        "Id": "randomquotes",
+        "isDone": true,
+        "Title": "Quotes Inspirational",
+        "Description": [
+            "The project using Vite - React - TypeScript",
+            "API Quotable is a free, open source quotations API"
+        ],
         "Feature": [
-            "ipsum dolor sit amet consectetur adipisicing eli",
-            "ipsum dolor sit amet consectetur adipisicing elidsdd",
-            "ipsum dolor sit amet consectetur adipisicing elidsddsd"
+            "Get random quote",
+            "Get all quotes by author",
+            "Get list authors",
+            "Get author details such as bio, website link"
         ],
         "Techs": [
-            "ReactJs",
-            "Tailwindcss"
-        ],
-        "Keywords": [
             "ReactJs",
             "TypeScript",
             "Tailwindcss"
         ],
+        "Keywords": [
+            "Vite",
+            "ReactJs",
+            "TypeScript",
+            "Tailwindcss",
+            "Petproject"
+        ],
         "Date": "",
-        "Image": "https://media.timeout.com/images/101602611/image.jpg",
-        "Alt": "thumnail project",
-        "Url": {
-            "Preview": "https://",
-            "Github": "https://"
-        }
+        "Image": "https://drive.google.com/uc?export=view&id=19n9JD9-auZA4luFa3zlwu6m0CFBzXlTA",
+        "Alt": "thumnail random quotes",
+        "Link": [
+            {
+                "Id": 1,
+                "Name": "Preview",
+                "Url":"https://quotesinspirational.onrender.com/"
+            },
+            {
+                "Id": 2,
+                "Name": "Github",
+                "Url":"https://github.com/ngkhang/random-quotes"
+            }
+        ]
     }
 ]

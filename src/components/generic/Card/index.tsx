@@ -1,25 +1,23 @@
+import { useState } from 'react';
 import { Link } from "react-router-dom";
 import eProject from "~/types/eProject";
 import { Blank } from "~/utils/imagesHelper";
 
-interface eCard {
-	width: string;
-	data: eProject;
-}
+function Card({ data }: {data : eProject}) {
+	const [isLoad, setLoad] = useState(false);
 
-function Card({ width, data }: eCard) {
 	return (
-		<div className={`p-2 w-full ${width} ${!data.isDone && "notDone"}`}>
-			<div className="rounded-md bg-white border-2 border-gray-200 hover:border-slate-400  flex flex-col h-full justify-between">
-				<div>
+		<div className={`w-full ${!data.isDone && "notDone"}`}>
+			<div className="rounded-md bg-white border-2 border-gray-200 hover:border-slate-400 flex flex-col h-full justify-between">
+				<div className="mb-5">
 					<Link
 						to={`/project/${data.Id}`}
-						className="w-full inline-block overflow-hidden rounded-md relative px-6 mb-1"
+						className="w-full inline-block overflow-hidden rounded-t-md relative mb-1 md:mb-3"
 					>
-						<img
-							src={`${data.isDone ? data.Image : Blank}`}
+						<img id='imageId'
+							src={`${data.isDone && isLoad ? data.Image : Blank}`} onLoad={() => setLoad(true)} onError={() => setLoad(false)}
 							alt="thumbnail of project"
-							className="w-full hover:scale-110 bg-cover bg-no-repeat transition-transform"
+							className="w-full hover:scale-125 bg-cover bg-no-repeat transition-transform"
 						/>
 						{!data.isDone && (
 							<>
@@ -30,19 +28,17 @@ function Card({ width, data }: eCard) {
 							</>
 						)}
 					</Link>
-					<div className="mx-4">
+					<div className="px-3 md:px-5">
 						<Link
 							to={`/project/${data.Id}`}
-							className="inline-block mb-1 font-medium md:text-lg text-base"
+							className="inline-block mb-1 md:mb-3 font-medium text-base md:text-xl"
 						>
 							{data.Title}
 						</Link>
-						<p className="text-sm line-clamp-3 leading-5">
-							{data.Description}
-						</p>
+						<p className="text-sm line-clamp-3 leading-5">{data.Description[0]}</p>
 					</div>
 				</div>
-				<div className="flex justify-end mb-1">
+				<div className="flex justify-end mb-2 md:mb-3 px-3 md:px-5">
 					<Link
 						to={`/project/${data.Id}`}
 						className="inline-block px-4 py-2 text-sm md:text-base font-medium tracking-wider"
